@@ -1,0 +1,22 @@
+<html lang="fa">
+
+<head>
+    <title>نتیجه ی پرداخت</title>
+</head>
+
+<body>
+    <h1>
+        <%= success ? "موفق" : "ناموفق" %>
+    </h1>
+    <p>کد رهگیری : <%= authority %>
+    </p>
+    <p>تا چند لحظه ی دیگر به ربات هدایت می شوید.</p>
+</body>
+
+<script>
+    setTimeout(() => {
+        window.location.assign("https://t.me/botID")
+    }, 5000)
+</script>
+
+</html>
